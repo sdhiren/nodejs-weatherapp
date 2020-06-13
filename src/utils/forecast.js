@@ -10,7 +10,9 @@ function forecast(longitude, lattitide, callback) {
                 else if(body.error){
                     callback(body.error.info)
                 }else{
-                    callback(null,`${body.current.weather_descriptions[0]} :  It is currently ${body.current.temperature} degrees out. But it feelslike ${body.current.feelslike}`)
+                    console.log(body.current)
+                    callback(null,`${body.current.weather_descriptions[0]} :  It is currently ${body.current.temperature} degrees out. But it feelslike ${body.current.feelslike}.
+                    \n The Humidity is ${body.current.humidity} percent`)
                 }                               
     })
 }
