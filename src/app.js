@@ -25,9 +25,6 @@ console.log(__filename)
 //     res.send('Hello!! This is express.')
 // })
 
-// app.get('/help', (req,res)=>{
-//     res.send('This is help page')
-// })
 
 app.get('',(req, res)=>  {
     res.render('index', {
