@@ -10,7 +10,7 @@ const geocode = (address, callback) => {
             callback('unable to connect to geo code service')
         }
         else if(body.features.length <1){
-            callback('Locatipn not found. Please try another search')
+            callback('Location not found. Please try another search')
         }else{
             //callback(null,`Longitude : ${response.body.features[0].center[0]} ; Lattitude : ${response.body.features[0].center[1]}`)
             console.log(`Longitude : ${body.features[0].center[0]} ; Lattitude : ${body.features[0].center[1]}`)
